@@ -1,0 +1,12 @@
+{
+  "name": "@fireheet/entities",
+  "version": "1.0.0",
+  "author": "CarlyFSS",
+  "license": "ISC",
+  "dependencies": {
+    "@nestjs/swagger": "^4.8.0",
+    "typeorm": "^0.2.32"
+  },
+  "devDependencies": {},
+  "description": ""
+}
