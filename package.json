@@ -1,7 +1,15 @@
 {
   "name": "@fireheet/entities",
   "version": "1.0.0",
-  "author": "CarlyFSS",
+  "author": "Carly Silva",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fireheet/entities.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fireheet/entities/issues"
+  },
+  "homepage": "https://github.com/fireheet/entities#readme",
   "license": "ISC",
   "dependencies": {
     "@nestjs/swagger": "^4.8.0",
