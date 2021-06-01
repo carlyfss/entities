@@ -9,21 +9,15 @@
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
     "allowJs": true,
-    "noEmit": true,
-    "strict": true,
+    "rootDir": ".",
     "sourceMap": true,
     "outDir": "./dist",
-    "baseUrl": "./src",
+    "baseUrl": "./typeorm",
     "incremental": true,
-    "paths": {
-      "@modules/*": ["modules/*"],
-      "@config/*": ["config/*"],
-      "@shared/*": ["shared/*"]
-    },
     "esModuleInterop": true,
-    "resolveJsonModule": true, 
+    "resolveJsonModule": true,
   },
   "include": [
-    "src" 
+    "typeorm" 
   ]
 }
