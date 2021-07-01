@@ -1,15 +1,12 @@
+import { Exclude } from 'class-transformer';
 import {
   Entity,
   Column,
   PrimaryGeneratedColumn,
   CreateDateColumn,
   UpdateDateColumn,
-  JoinColumn,
-  ManyToOne,
   DeleteDateColumn
 } from 'typeorm';
-import Role from './Role';
-import Tenant from './Tenant';
 
 @Entity('users')
 class User {
@@ -29,6 +26,7 @@ class User {
   email: string;
 
   @Column()
+  @Exclude()
   password: string;
 
   @Column()
