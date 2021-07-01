@@ -20,14 +20,14 @@ class User {
   tenant_id: string;
   
   @JoinColumn()
-  @ManyToOne(() => Tenant, tenant => tenant.id)
+  @ManyToOne(() => Tenant)
   tenant: Tenant;
 
   @Column()
   role_id: string;
   
   @JoinColumn()
-  @ManyToOne(() => Role, role => role.id)
+  @ManyToOne(() => Role)
   role: Role;
 
   @Column()
