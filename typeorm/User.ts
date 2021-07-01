@@ -18,17 +18,9 @@ class User {
 
   @Column()
   tenant_id: string;
-  
-  @JoinColumn()
-  @ManyToOne(() => Tenant)
-  tenant: Tenant;
 
   @Column()
   role_id: string;
-  
-  @JoinColumn()
-  @ManyToOne(() => Role)
-  role: Role;
 
   @Column()
   name: string;
