@@ -2,7 +2,7 @@ name: publish-npm
 on:
   push:
     branches:
-      - main
+      - develop
 jobs:
   publish_npm:
     name: Push NPM Package
