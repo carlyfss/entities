@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "target": "ES6",
+    "target": "ES3",
     "moduleResolution": "node",
-    "module": "es6",
+    "module": "CommonJS",
     "declaration": true,
     "removeComments": true,
     "emitDecoratorMetadata": true,
@@ -14,7 +14,6 @@
     "outDir": "dist",
     "incremental": true,
     "esModuleInterop": true,
-    "resolveJsonModule": true,
   },
   "include": [
     "./entities",
