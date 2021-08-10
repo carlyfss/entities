@@ -14,9 +14,6 @@ class User {
   id: string;
 
   @Column()
-  tenant_id: string;
-
-  @Column()
   role_id: string;
 
   @Column()
