@@ -18,6 +18,7 @@ class User {
   id: string;
 
   @Column()
+  @Exclude()
   role_id: string;
 
   @Column()
@@ -31,6 +32,7 @@ class User {
   password: string;
 
   @Column()
+  @Exclude()
   document_number: string;
 
   @Column()
