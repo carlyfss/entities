@@ -32,6 +32,9 @@ class User {
   @Column()
   sex: string;
 
+  @Column()
+  birthdate: Date;
+
   @CreateDateColumn()
   created_at: Date;
 
