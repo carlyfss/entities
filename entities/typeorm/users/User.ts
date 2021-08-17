@@ -9,7 +9,7 @@ import {
 } from 'typeorm';
 
 @Entity('users')
-class User {
+export default class User {
   constructor(partial: Partial<User>) {
     Object.assign(this, partial);
   }
@@ -50,5 +50,3 @@ class User {
   @DeleteDateColumn()
   deleted_at: Date;
 }
-
-export default User;
