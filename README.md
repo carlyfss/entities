@@ -5,10 +5,10 @@
 
 ---
 
-#### Modules: 
-* Tenants
+#### Entities: 
 * Roles
 * Users
+* Address
 
 ---
 *To use this module, just import in your services or repository and use it as an entity*

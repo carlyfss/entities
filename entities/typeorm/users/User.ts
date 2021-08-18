@@ -8,6 +8,17 @@ import {
   DeleteDateColumn
 } from 'typeorm';
 
+/**
+ * User entity fields:
+ * @id string
+ * @role_id string
+ * @name string
+ * @email string
+ * @password string
+ * @document_number string
+ * @sex string
+ * @birthdate Date
+ */
 @Entity('users')
 export default class User {
   constructor(partial: Partial<User>) {

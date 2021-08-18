@@ -6,6 +6,11 @@ import {
   UpdateDateColumn,
 } from 'typeorm';
 
+/**
+ * Role entity fields:
+ * @id string
+ * @name string
+ */
 @Entity('roles')
 export default class Role {
   @PrimaryGeneratedColumn('uuid')

@@ -7,6 +7,15 @@ import {
   DeleteDateColumn,
 } from 'typeorm';
 
+/**
+ * Address entity fields:
+ * @id string
+ * @user_id string
+ * @street string
+ * @number number
+ * @district string
+ * @postal_code string
+ */
 @Entity('addresses')
 export default class Address {
   @PrimaryGeneratedColumn('uuid')
