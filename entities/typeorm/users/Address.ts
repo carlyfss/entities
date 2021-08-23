@@ -28,9 +28,6 @@ export default class Address {
   @Column()
   @Exclude()
   user_id: string;
-
-  @Column()
-  index: number;
   
   @Column()
   country : string
