@@ -5,8 +5,11 @@ import {
   PrimaryGeneratedColumn,
   CreateDateColumn,
   UpdateDateColumn,
-  DeleteDateColumn
+  DeleteDateColumn,
+  JoinColumn,
+  OneToMany
 } from 'typeorm';
+import { Address } from '.';
 
 /**
  * User entity fields:
@@ -45,6 +48,9 @@ export default class User {
   @Column()
   @Exclude()
   document_number: string;
+
+  @OneToMany(type => Address, address => address.user)
+  addresses: Address[];
 
   @Column()
   sex: string;

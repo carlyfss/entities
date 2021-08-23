@@ -1,3 +1,4 @@
+import { Exclude } from 'class-transformer';
 import {
   Entity,
   Column,
@@ -5,7 +6,9 @@ import {
   CreateDateColumn,
   UpdateDateColumn,
   DeleteDateColumn,
+  ManyToOne,
 } from 'typeorm';
+import { User } from '.';
 
 /**
  * Address entity fields:
@@ -25,7 +28,11 @@ export default class Address {
   id: string;
 
   @Column()
+  @Exclude()
   user_id: string;
+
+  @ManyToOne(type => User, user => user.addresses)
+  user: User;
   
   @Column()
   country : string
