@@ -50,7 +50,7 @@ export default class User {
   document_number: string;
 
   @Column()
-  main_address_index: number;
+  main_address_id: string;
 
   @Column()
   sex: string;
