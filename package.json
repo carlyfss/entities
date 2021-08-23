@@ -1,6 +1,6 @@
 {
   "name": "@fireheet/entities",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "author": "Carly Silva",
   "scripts": {
     "build": "tsc -p tsconfig.json"

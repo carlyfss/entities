@@ -31,6 +31,9 @@ export default class Address {
   @Exclude()
   user_id: string;
 
+  @Column()
+  index: number;
+
   @ManyToOne(type => User, user => user.addresses)
   user: User;
   
