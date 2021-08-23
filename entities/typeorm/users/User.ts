@@ -49,8 +49,8 @@ export default class User {
   @Exclude()
   document_number: string;
 
-  @OneToMany(type => Address, address => address.user)
-  addresses: Address[];
+  @Column()
+  main_address_index: number;
 
   @Column()
   sex: string;

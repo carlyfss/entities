@@ -6,9 +6,7 @@ import {
   CreateDateColumn,
   UpdateDateColumn,
   DeleteDateColumn,
-  ManyToOne,
 } from 'typeorm';
-import { User } from '.';
 
 /**
  * Address entity fields:
@@ -33,9 +31,6 @@ export default class Address {
 
   @Column()
   index: number;
-
-  @ManyToOne(type => User, user => user.addresses)
-  user: User;
   
   @Column()
   country : string
