@@ -1,6 +1,6 @@
 {
   "name": "@fireheet/entities",
-  "version": "1.4.8",
+  "version": "1.5.0",
   "author": "Carly Silva",
   "scripts": {
     "build": "tsc -p tsconfig.json"
@@ -15,12 +15,11 @@
   "homepage": "https://github.com/fireheet/entities#readme",
   "license": "ISC",
   "dependencies": {
-    "class-transformer": "^0.4.0",
     "typeorm": "^0.2.32"
   },
   "devDependencies": {
     "@types/node": "^15.6.1",
     "typescript": "^4.3.2"
   },
-  "description": ""
+  "description": "Simple entity module to use with Typeorm"
 }

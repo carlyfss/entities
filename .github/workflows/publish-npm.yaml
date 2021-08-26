@@ -29,6 +29,9 @@ jobs:
       - name: Copy license
         run: cp LICENSE ./dist
 
+      - name: Install only production dependencies
+        run: yarn --prod
+
       - name: Publish NPM Package
         uses: JS-DevTools/npm-publish@v1
         with:

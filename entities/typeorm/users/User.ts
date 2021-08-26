@@ -1,4 +1,3 @@
-import { Exclude } from 'class-transformer';
 import {
   Entity,
   Column,
@@ -6,10 +5,7 @@ import {
   CreateDateColumn,
   UpdateDateColumn,
   DeleteDateColumn,
-  JoinColumn,
-  OneToMany
 } from 'typeorm';
-import { Address } from '.';
 
 /**
  * User entity fields:
@@ -32,7 +28,6 @@ export default class User {
   id: string;
 
   @Column()
-  @Exclude()
   role_id: string;
 
   @Column()
@@ -42,11 +37,9 @@ export default class User {
   email: string;
 
   @Column()
-  @Exclude()
   password: string;
 
   @Column()
-  @Exclude()
   document_number: string;
 
   @Column()

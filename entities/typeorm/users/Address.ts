@@ -1,4 +1,3 @@
-import { Exclude } from 'class-transformer';
 import {
   Entity,
   Column,
@@ -26,7 +25,6 @@ export default class Address {
   id: string;
 
   @Column()
-  @Exclude()
   user_id: string;
   
   @Column()
