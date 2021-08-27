@@ -17,6 +17,10 @@ import Phone from './Phone';
  * @email string
  * @password string
  * @document_number string
+ * @main_phone_id string
+ * @phone (optional) holds the phone entity to return in requests
+ * @main_address_id string
+ * @address (optional) holds the address entity to return in requests
  * @sex string
  * @birthdate Date
  */
