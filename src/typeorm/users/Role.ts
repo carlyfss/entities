@@ -13,6 +13,10 @@ import {
  */
 @Entity('roles')
 export default class Role {
+  constructor(partial: Partial<Role>) {
+    Object.assign(this, partial);
+  }
+
   @PrimaryGeneratedColumn('uuid')
   id: string;
 

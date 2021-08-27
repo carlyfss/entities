@@ -2,24 +2,25 @@
   "compilerOptions": {
     "target": "ES6",
     "moduleResolution": "node",
-    "module": "CommonJS",
+    "module": "es2015",
     "declaration": true,
-    "removeComments": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
     "allowJs": true,
     "baseUrl": ".",
-    "sourceMap": true,
     "outDir": "dist",
     "incremental": true,
     "esModuleInterop": true,
+    "importHelpers": true,
+    "inlineSourceMap": true,
   },
   "include": [
     "./entities",
     "index.ts"
   ],
   "exclude": [
-    "dist"
+    "dist",
+    "node_modules"
   ]
 }

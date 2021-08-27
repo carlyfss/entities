@@ -6,6 +6,8 @@ import {
   UpdateDateColumn,
   DeleteDateColumn,
 } from 'typeorm';
+import { Address } from '.';
+import Phone from './Phone';
 
 /**
  * User entity fields:
@@ -45,8 +47,12 @@ export default class User {
   @Column()
   main_phone_id: string;
 
+  phone?: Phone;
+
   @Column()
   main_address_id: string;
+  
+  address?: Address;
 
   @Column()
   sex: string;

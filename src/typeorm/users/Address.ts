@@ -21,6 +21,10 @@ import {
  */
 @Entity('addresses')
 export default class Address {
+  constructor(partial: Partial<Address>) {
+    Object.assign(this, partial);
+  }
+
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
