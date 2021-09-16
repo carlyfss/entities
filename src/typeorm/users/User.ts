@@ -68,9 +68,9 @@ export default class User {
   @DeleteDateColumn()
   deleted_at: Date;
 
-  address?: Address;
+  address?: Partial<Address>;
 
-  phone?: Phone;
+  phone?: Partial<Phone>;
 
   get information(): Partial<User> {
     return {
