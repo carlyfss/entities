@@ -6,6 +6,7 @@ import {
   UpdateDateColumn,
   DeleteDateColumn,
 } from 'typeorm';
+import { Address, Phone } from '.';
 
 /**
  * User entity fields:
@@ -66,6 +67,10 @@ export default class User {
 
   @DeleteDateColumn()
   deleted_at: Date;
+
+  address?: Address;
+
+  phone?: Phone;
 
   get information(): Partial<User> {
     return {
