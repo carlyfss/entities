@@ -49,7 +49,7 @@ export default class User {
   document_number: string;
 
   @Column()
-  main_phone_id: string;
+  phone_id: string;
 
   phone?: Phone;
 
