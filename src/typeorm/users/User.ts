@@ -72,4 +72,17 @@ export default class User {
 
   @DeleteDateColumn()
   deleted_at: Date;
+
+  get info(): Partial<User> {
+    return {
+      id: this.id,
+      name: this.name,
+      email: this.email,
+      birthdate: this.birthdate,
+      sex: this.sex,
+      document_number: this.document_number,
+      main_address_id: this.main_address_id,
+      phone_id: this.phone_id,
+    }
+  }
 }
