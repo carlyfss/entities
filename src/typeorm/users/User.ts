@@ -6,8 +6,6 @@ import {
   UpdateDateColumn,
   DeleteDateColumn,
 } from 'typeorm';
-import { Address } from '.';
-import Phone from './Phone';
 
 /**
  * User entity fields:
