@@ -48,4 +48,14 @@ export default class Phone {
 
   @DeleteDateColumn()
   deleted_at: Date;
+
+  get information(): Partial<Phone> {
+    return {
+      id: this.id,
+      country: this.country,
+      prefix: this.prefix,
+      number: this.number,
+      verified: this.verified,
+    }
+  }
 }

@@ -51,12 +51,8 @@ export default class User {
   @Column()
   phone_id: string;
 
-  phone?: Phone;
-
   @Column()
   main_address_id: string;
-  
-  address?: Address;
 
   @Column()
   sex: string;
@@ -73,7 +69,7 @@ export default class User {
   @DeleteDateColumn()
   deleted_at: Date;
 
-  get info(): Partial<User> {
+  get information(): Partial<User> {
     return {
       id: this.id,
       name: this.name,
@@ -81,8 +77,6 @@ export default class User {
       birthdate: this.birthdate,
       sex: this.sex,
       document_number: this.document_number,
-      main_address_id: this.main_address_id,
-      phone_id: this.phone_id,
     }
   }
 }

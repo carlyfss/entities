@@ -55,6 +55,9 @@ export default class Address {
   @Column()
   postal_code: string;
 
+  @Column()
+  description: string;
+
   @CreateDateColumn()
   created_at: Date;
 
@@ -63,4 +66,18 @@ export default class Address {
 
   @DeleteDateColumn()
   deleted_at: Date;
+
+  get information(): Partial<Address> {
+    return {
+      id: this.id,
+      country: this.country,
+      state: this.state,
+      city: this.city,
+      street: this.street,
+      number: this.number,
+      district: this.district,
+      complement: this.complement,
+      description: this.description,
+    }
+  }
 }
