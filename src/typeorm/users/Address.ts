@@ -30,6 +30,9 @@ export default class Address {
 
   @Column()
   user_id: string;
+
+  @Column()
+  zip_code: string;
   
   @Column()
   country : string
@@ -47,13 +50,10 @@ export default class Address {
   number: number;
 
   @Column()
-  district: string;
+  neighborhood: string;
 
   @Column()
   complement: string;
-
-  @Column()
-  postal_code: string;
 
   @Column()
   description: string;
@@ -75,7 +75,7 @@ export default class Address {
       city: this.city,
       street: this.street,
       number: this.number,
-      district: this.district,
+      neighborhood: this.neighborhood,
       complement: this.complement,
       description: this.description,
     }
