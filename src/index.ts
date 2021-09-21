@@ -1,1 +1,1 @@
-export * from './typeorm'
+export * as typeorm from './typeorm'

@@ -5,7 +5,9 @@
 
 ---
 
-#### Entities: 
+## Modules
+
+#### Users:
 * Roles
 * Users
 * Address
