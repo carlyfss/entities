@@ -8,19 +8,20 @@
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
     "allowJs": true,
-    "baseUrl": ".",
+    "baseUrl": "orm",
     "outDir": "dist",
+    "strict": true,
     "incremental": true,
     "esModuleInterop": true,
     "importHelpers": true,
     "inlineSourceMap": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noEmitOnError": true
+    "noEmitOnError": true,
   },
   "include": [
-    "./entities",
-    "index.ts"
+    "./orm",
+    "./index.ts"
   ],
   "exclude": [
     "dist",

@@ -6,7 +6,9 @@ import {
   UpdateDateColumn,
   DeleteDateColumn,
 } from 'typeorm';
-import { Address, Phone } from '.';
+
+import Address from './Address';
+import Phone from './Phone'
 
 /**
  * User entity fields:
@@ -30,43 +32,43 @@ export default class User {
   }
 
   @PrimaryGeneratedColumn('uuid')
-  id: string;
+  id!: string;
 
   @Column()
-  role_id: string;
+  role_id!: string;
 
   @Column()
-  name: string;
+  name!: string;
 
   @Column()
-  email: string;
+  email!: string;
 
   @Column()
-  password: string;
+  password!: string;
 
   @Column()
-  document_number: string;
+  document_number!: string;
 
   @Column()
-  phone_id: string;
+  phone_id!: string;
 
   @Column()
-  main_address_id: string;
+  main_address_id!: string;
 
   @Column()
-  sex: string;
+  sex!: string;
 
   @Column()
-  birthdate: Date;
+  birthdate!: Date;
 
   @CreateDateColumn()
-  created_at: Date;
+  created_at!: Date;
 
   @UpdateDateColumn()
-  updated_at: Date;
+  updated_at!: Date;
 
   @DeleteDateColumn()
-  deleted_at: Date;
+  deleted_at!: Date;
 
   address?: Partial<Address>;
 

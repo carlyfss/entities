@@ -26,46 +26,46 @@ export default class Address {
   }
 
   @PrimaryGeneratedColumn('uuid')
-  id: string;
+  id!: string;
 
   @Column()
-  user_id: string;
+  user_id!: string;
 
   @Column()
-  zip_code: string;
+  zip_code!: string;
   
   @Column()
-  country : string
+  country!: string;
   
   @Column()
-  state : string
+  state!: string;
   
   @Column()
-  city : string
+  city!: string;
 
   @Column()
-  street: string;
+  street!: string;
 
   @Column()
-  number: number;
+  number!: number;
 
   @Column()
-  neighborhood: string;
+  neighborhood!: string;
 
   @Column()
-  complement: string;
+  complement!: string;
 
   @Column()
-  description: string;
+  description!: string;
 
   @CreateDateColumn()
-  created_at: Date;
+  created_at!: Date;
 
   @UpdateDateColumn()
-  updated_at: Date;
+  updated_at!: Date;
 
   @DeleteDateColumn()
-  deleted_at: Date;
+  deleted_at!: Date;
 
   get information(): Partial<Address> {
     return {

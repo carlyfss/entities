@@ -21,13 +21,13 @@ jobs:
         run: yarn build
 
       - name: Copy package.json
-        run: cp package.json ./dist
+        run: cp package.json .
 
       - name: Copy readme
-        run: cp README.md ./dist
+        run: cp README.md .
 
       - name: Copy license
-        run: cp LICENSE ./dist
+        run: cp LICENSE .
 
       - name: Install only production dependencies
         run: yarn --prod
@@ -36,7 +36,7 @@ jobs:
         uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
-          package: ./dist/package.json
+          package: ./package.json
       - if: steps.publish.outputs.type != 'none'
         run: |
           echo "Version changed: ${{ steps.publish.outputs.old-version }} => ${{ steps.publish.outputs.version }}"

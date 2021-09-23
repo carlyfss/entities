@@ -23,31 +23,31 @@ export default class Phone {
   }
   
   @PrimaryGeneratedColumn('uuid')
-  id: string;
+  id!: string;
 
   @Column()
-  user_id: string;
+  user_id!: string;
 
   @Column()
-  country: number;
+  country!: number;
 
   @Column()
-  prefix: number;
+  prefix!: number;
 
   @Column()
-  number: string;
+  number!: string;
 
   @Column()
-  verified: boolean;
+  verified!: boolean;
 
   @CreateDateColumn()
-  created_at: Date;
+  created_at!: Date;
 
   @UpdateDateColumn()
-  updated_at: Date;
+  updated_at!: Date;
 
   @DeleteDateColumn()
-  deleted_at: Date;
+  deleted_at!: Date;
 
   get information(): Partial<Phone> {
     return {
