@@ -24,8 +24,6 @@ jobs:
       - name: Install only production dependencies
         run: yarn --prod
 
-      -
-
       - name: Publish NPM Package
         uses: JS-DevTools/npm-publish@v1
         with:
