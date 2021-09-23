@@ -20,7 +20,7 @@ import {
  * @postal_code string (min-length = 4, max-length = 12)
  */
 @Entity('addresses')
-export default class Address {
+class Address {
   constructor(partial: Partial<Address>) {
     Object.assign(this, partial);
   }
@@ -81,3 +81,5 @@ export default class Address {
     }
   }
 }
+
+export default Address;

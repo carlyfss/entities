@@ -8,7 +8,7 @@
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
     "allowJs": true,
-    "baseUrl": "orm",
+    "baseUrl": "src",
     "outDir": "dist",
     "strict": true,
     "incremental": true,
@@ -20,7 +20,7 @@
     "noEmitOnError": true,
   },
   "include": [
-    "./orm",
+    "./src",
     "./index.ts"
   ],
   "exclude": [
