@@ -22,5 +22,5 @@
     "tslib": "^2.3.1",
     "typescript": "^4.3.2"
   },
-  "description": "Simple entity module to use with Typeorm"
+  "description": "This package was created for a personal project, you can use it any way you like."
 }
