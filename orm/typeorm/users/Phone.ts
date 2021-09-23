@@ -5,7 +5,7 @@ import {
   CreateDateColumn,
   UpdateDateColumn,
   DeleteDateColumn,
-} from 'typeorm';
+} from '../../../node_modules/typeorm';
 
 /**
  * Role entity fields:

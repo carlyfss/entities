@@ -1,1 +1,0 @@
-import { Role } from './orm/typeorm/users'

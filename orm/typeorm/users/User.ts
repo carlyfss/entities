@@ -5,7 +5,7 @@ import {
   CreateDateColumn,
   UpdateDateColumn,
   DeleteDateColumn,
-} from 'typeorm';
+} from '../../../node_modules/typeorm';
 
 import Address from './Address';
 import Phone from './Phone'
