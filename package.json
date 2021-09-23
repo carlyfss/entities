@@ -1,6 +1,6 @@
 {
   "name": "@fireheet/entities",
-  "version": "1.5.16",
+  "version": "1.5.17",
   "author": "Carly Silva",
   "scripts": {
     "build": "tsc -p tsconfig.json"
@@ -15,7 +15,7 @@
   "homepage": "https://github.com/fireheet/entities#readme",
   "license": "MIT",
   "dependencies": {
-    "typeorm": "^0.2.32"
+    "typeorm": "^0.2.37"
   },
   "devDependencies": {
     "@types/node": "^15.6.1",
