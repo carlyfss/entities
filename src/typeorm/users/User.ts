@@ -18,10 +18,10 @@ import Phone from './Phone'
  * @email string
  * @password string
  * @document_number string
- * @main_phone_id string
- * @phone (optional) holds the phone entity to return in requests
+ * @phone_id string
+ * @phone (optional) stores the phone entity
  * @main_address_id string
- * @address (optional) holds the address entity to return in requests
+ * @address (optional) stores the address entity
  * @sex string
  * @birthdate Date
  */
@@ -74,7 +74,7 @@ export default class User {
 
   phone?: Partial<Phone>;
 
-  get information(): Partial<User> {
+  get info(): Partial<User> {
     return {
       id: this.id,
       name: this.name,

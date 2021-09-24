@@ -49,7 +49,7 @@ export default class Phone {
   @DeleteDateColumn()
   deleted_at!: Date;
 
-  get information(): Partial<Phone> {
+  get info(): Partial<Phone> {
     return {
       id: this.id,
       country: this.country,

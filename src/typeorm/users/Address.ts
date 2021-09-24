@@ -16,8 +16,8 @@ import {
  * @city string
  * @street string
  * @number number
- * @district string
- * @postal_code string (min-length = 4, max-length = 12)
+ * @neighborhood string
+ * @zip_code string
  */
 @Entity('addresses')
 class Address {
@@ -67,7 +67,7 @@ class Address {
   @DeleteDateColumn()
   deleted_at!: Date;
 
-  get information(): Partial<Address> {
+  get info(): Partial<Address> {
     return {
       id: this.id,
       country: this.country,

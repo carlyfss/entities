@@ -29,7 +29,7 @@ export default class Role {
   @UpdateDateColumn()
   updated_at!: Date;
 
-  get information(): Partial<Role> {
+  get info(): Partial<Role> {
     return {
       id: this.id,
       name: this.name

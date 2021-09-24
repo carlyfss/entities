@@ -21,7 +21,7 @@ The folder structure was made to separate different ORM's, and also for differen
 | Address   |&#9745;  |&#9746;|&#9746;     |
 | Phone     |&#9745;  |&#9746;|&#9746;     |
 
-
+<a href="https://app.swaggerhub.com/apis-docs/fireheet/entities/0.1.0#/">Users entities documentation</a>
   
 ---
 *To use this module, just import in your services or repository and use it as you like*
