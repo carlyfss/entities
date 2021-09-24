@@ -4,7 +4,7 @@ import {
   PrimaryGeneratedColumn,
   CreateDateColumn,
   UpdateDateColumn,
-} from '../../../node_modules/typeorm';
+} from 'typeorm';
 
 /**
  * Role entity fields:

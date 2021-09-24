@@ -8,7 +8,7 @@
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
     "allowJs": true,
-    "baseUrl": "src",
+    "baseUrl": ".",
     "outDir": "dist",
     "strict": true,
     "incremental": true,
@@ -18,6 +18,9 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noEmitOnError": true,
+  },
+  "paths": {
+    "@node_modules/*": ["./node_modules/"],
   },
   "include": [
     "./src",

@@ -5,7 +5,7 @@ import {
   CreateDateColumn,
   UpdateDateColumn,
   DeleteDateColumn,
-} from '../../../node_modules/typeorm';
+} from 'typeorm';
 
 /**
  * Address entity fields:
