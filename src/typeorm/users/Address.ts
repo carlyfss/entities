@@ -66,7 +66,7 @@ class Address {
   updated_at!: Date;
 
   @DeleteDateColumn()
-  deleted_at!: Date;
+  deleted_at?: Date;
 
   get info(): Partial<Address> {
     return {
