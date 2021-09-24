@@ -12,18 +12,19 @@ import Phone from './Phone'
 
 /**
  * User entity fields:
- * @id string
- * @role_id string
- * @name string
- * @email string
- * @password string
- * @document_number string
- * @phone_id string
- * @phone (optional) stores the phone entity
- * @main_address_id string
- * @address (optional) stores the address entity
- * @sex string
- * @birthdate Date
+ * - @id - *String*
+ * - @role_id - *String*
+ * - @name - *String*
+ * - @email - *String*
+ * - @password - *String*
+ * - @document_number - *String*
+ * - @phone_id - *String*
+ * - @phone - **(*optional*)** stores the phone entity
+ * - @main_address_id - *String*
+ * - @address - **(*optional*)** stores the address entity
+ * - @sex - *String*
+ * - @birthdate - Date
+ * - @info - returns useful information about the entity:**id**, **name**, **email**, **birthdate**, **sex**, **document_number**
  */
 @Entity('users')
 export default class User {

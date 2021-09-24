@@ -9,15 +9,16 @@ import {
 
 /**
  * Address entity fields:
- * @id string
- * @user_id string
- * @country string
- * @state string
- * @city string
- * @street string
- * @number number
- * @neighborhood string
- * @zip_code string
+ * - @id - *String*
+ * - @user_id - *String*
+ * - @country - *String*
+ * - @state - *String*
+ * - @city - *String*
+ * - @street - *String*
+ * - @number - *Number*
+ * - @neighborhood - *String*
+ * - @zip_code - *String*
+ * - @info - returns useful information about the entity:**id**, **zip_code**,**country**,**state**,**city**,**street**,**number**,**neighborhood**,**complement**,**description**
  */
 @Entity('addresses')
 class Address {
@@ -73,6 +74,7 @@ class Address {
       country: this.country,
       state: this.state,
       city: this.city,
+      zip_code: this.zip_code,
       street: this.street,
       number: this.number,
       neighborhood: this.neighborhood,

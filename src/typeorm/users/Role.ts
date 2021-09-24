@@ -8,8 +8,9 @@ import {
 
 /**
  * Role entity fields:
- * @id string
- * @name string
+ * - @id - *String*
+ * - @name - *String*
+ * - @info - returns useful information about the entity:**id**, **name**
  */
 @Entity('roles')
 export default class Role {

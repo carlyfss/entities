@@ -9,12 +9,13 @@ import {
 
 /**
  * Role entity fields:
- * @id string
- * @user_id string
- * @country number
- * @prefix number
- * @number string
- * @verified boolean
+ * - @id - *String*
+ * - @user_id - *String*
+ * - @country - *Number*
+ * - @prefix - *Number*
+ * - @number - *String*
+ * - @verified - *Boolean*
+ * - @info - returns useful information about the entity:**id**, **country**, **prefix**, **number**, **verified**
  */
 @Entity('phones')
 export default class Phone {
