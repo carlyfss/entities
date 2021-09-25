@@ -1,4 +1,4 @@
-# Fireheet Entities <a><img src="https://img.shields.io/badge/v0.1.0-red"/></a>
+# Fireheet Entities <a><img src="https://img.shields.io/badge/v0.0.4-red"/></a>
 
 <a href="https://typeorm.io/#/"><img src="https://img.shields.io/badge/typeorm-v0.2.37-green"/></a>
 <a href="https://typeorm.io/#/"><img src="https://img.shields.io/badge/typescript-v4.3.2-green"/></a>
@@ -14,12 +14,12 @@ The folder structure was made to separate different ORM's, and also for differen
 ## Modules
 
 #### Users
-|         	|Typeorm  |Prisma | Vanilla JS |
-|---------	|---------|-------|------------|
-| Role    	|&#9745;  |&#9746;|&#9746;     |
-| User    	|&#9745;  |&#9746;|&#9746;     |
-| Address   |&#9745;  |&#9746;|&#9746;     |
-| Phone     |&#9745;  |&#9746;|&#9746;     |
+|         	|Typeorm  |
+|---------	|---------|
+| Role    	|&#9745;  |
+| User    	|&#9745;  |
+| Address   |&#9745;  |
+| Phone     |&#9745;  |
 
 <a href="https://app.swaggerhub.com/apis-docs/fireheet/entities/0.1.0#/">Users entities documentation</a>
   
