@@ -11,7 +11,7 @@ import {
  * Role entity fields:
  * - @id - *String*
  * - @user_id - *String*
- * - @country - *Number*
+ * - @country_code - *Number*
  * - @prefix - *Number*
  * - @number - *String*
  * - @verified - *Boolean*
@@ -30,7 +30,7 @@ export default class Phone {
   user_id!: string;
 
   @Column()
-  country!: number;
+  country_code!: number;
 
   @Column()
   prefix!: number;
@@ -53,7 +53,7 @@ export default class Phone {
   get info(): Partial<Phone> {
     return {
       id: this.id,
-      country: this.country,
+      country_code: this.country_code,
       prefix: this.prefix,
       number: this.number,
       verified: this.verified,

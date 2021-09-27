@@ -1,4 +1,4 @@
-# Fireheet Entities <a><img src="https://img.shields.io/badge/v0.0.4-red"/></a>
+# Fireheet Entities <a><img src="https://img.shields.io/badge/0.0.6-red"/></a>
 
 <a href="https://typeorm.io/#/"><img src="https://img.shields.io/badge/typeorm-v0.2.37-green"/></a>
 <a href="https://typeorm.io/#/"><img src="https://img.shields.io/badge/typescript-v4.3.2-green"/></a>
