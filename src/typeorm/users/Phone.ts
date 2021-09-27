@@ -11,8 +11,8 @@ import {
  * Role entity fields:
  * - @id - *String*
  * - @user_id - *String*
- * - @country_code - *Number*
- * - @prefix - *Number*
+ * - @country_code - *String*
+ * - @prefix - *String*
  * - @number - *String*
  * - @verified - *Boolean*
  * - @info - returns useful information about the entity:**id**, **country**, **prefix**, **number**, **verified**
@@ -30,10 +30,10 @@ export default class Phone {
   user_id!: string;
 
   @Column()
-  country_code!: number;
+  country_code!: string;
 
   @Column()
-  prefix!: number;
+  prefix!: string;
 
   @Column()
   number!: string;
